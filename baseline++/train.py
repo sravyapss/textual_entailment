@@ -222,8 +222,8 @@ def main():
         cost_val, error_val = evaluate(data_val, compute_costerror)
         cost_test, error_test = evaluate(data_test, compute_costerror)
         error_train = 5*error_train/len(data_train)
-        error_val = error_val/len(data_val) - 4
-        error_test = (error_test/len(data_test)) - 5
+        error_val = error_val/len(data_val)
+        error_test = (error_test/len(data_test))
         # print("epoch %d,          error train %f dev %f test %f" % (i, error_train))
 
         print("epoch %d,          error train %f dev %f test %f" % (i, error_train, error_val, error_test))
